@@ -7,5 +7,13 @@
     <groupId>hu.petrik</groupId>
     <artifactId>AdatbazisDemo</artifactId>
     <version>1.0</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.25</version>
+        </dependency>
+    </dependencies>
     
 </project>

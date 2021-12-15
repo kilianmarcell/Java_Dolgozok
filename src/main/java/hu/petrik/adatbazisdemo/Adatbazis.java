@@ -25,12 +25,12 @@ public class Adatbazis {
     }
 
     public List<Dolgozo> dolgozokListazasa() throws SQLException {
+        List<Dolgozo> dolgozoLista = new ArrayList<>();
         String sql = "SELECT * FROM dolgozok";
         Statement stmt = conn.createStatement();
         ResultSet result = stmt.executeQuery(sql);
 
         while (result.next()) {
-            List<Dolgozo> dolgozoLista = new ArrayList<>();
 
             int id = result.getInt("id");
             int kor = result.getInt("kor");
@@ -42,6 +42,6 @@ public class Adatbazis {
 
             dolgozoLista.add(dolgozo);
         }
-        return dolgozokListazasa();
+        return dolgozoLista;
     }
 }
